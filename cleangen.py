@@ -64,7 +64,7 @@ class CleanGen:
                         suspicous_score = temp_probs_stack[guess] / probs_ref[guess_token_indice]
                         previous_probs = torch.softmax(previous_logits[guess], dim=-1) 
                         
-                        # if a large difference between model_main and mdoel_ref 
+                        # if a large suspicous score is detected, replace that token
                         if suspicous_score >= self.alpha:
                             if self.verbose:
                                 logging.info("\n-----------------------------------------------")
