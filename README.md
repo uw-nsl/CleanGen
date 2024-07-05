@@ -20,7 +20,7 @@ then enter your Huggingface private key beginning with "hf_".
 
 **Get Code**
 ```
-git clone https://github.com/uw-nsl/CleanGen.git
+git clone https://github.com/uw-nsl/CleanGen
 ```
 **Build Environment**
 ```
