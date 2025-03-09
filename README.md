@@ -43,7 +43,9 @@ Current Supports:
 
 - **Attacker**: VPI-SS, VPI-CI, AutoPoison, CB-MT, CB-ST.
 
-- **Defender**: cleangen, no_defense (other baselines are comming soon).
+- **Defender**: cleangen, no_defense.
+
+You could use the [wanda official implement](https://github.com/locuslab/wanda) to prune models for the baseline of "pruning" and fine-tune the models for the baselines of "fine-tuning" and "fine-pruning". You could use the [vllm speculative decoding implementation](https://docs.vllm.ai/en/latest/features/spec_decode.html#speculative-decoding) for the baseline of "speculative".
 
 Don't forget to **add your openai api** to calculate ASR for CB-MT, CB-ST, and VPI-SS.
 
